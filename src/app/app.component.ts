@@ -8,23 +8,28 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'My New Angular App!';
   name = 'Joshua';
+  page = '1';
 
   public persons = [
     {
       'name': 'Joshua Emanaul',
-      'company': 'NewAge Computer Inc.'
+      'company': 'NewAge Computer Inc.',
+      'phone': '212-567-893'
     },
     {
       'name': 'Mark Goodwill',
-      'company': 'FedEx Inc.'
+      'company': 'FedEx Inc.',
+      'phone': '212-567-893'
     },
     {
       'name': 'Paul Elizabeth',
-      'company': 'ComputerRE Ent.'
+      'company': 'ComputerRE Ent.',
+      'phone': '212-567-893'
     },
     {
       'name': 'Mary Oliva',
-      'company': 'Advanced Diagnostics'
+      'company': 'Advanced Diagnostics',
+      'phone': '212-567-893'
     }
   ];
 
@@ -34,5 +39,13 @@ export class AppComponent {
 
   displayPerson(persons) {
     return `${persons.name} works for ${persons.company}`;
+  }
+
+  getphone(persons) {
+    return `${persons.name}: ${persons.phone}`;
+  }
+
+  changePage() {
+    return this.page;
   }
 }
