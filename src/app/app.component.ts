@@ -49,16 +49,16 @@ export class AppComponent {
     if (this.page === 0) {
       return this.page = 2;
     }
-    if (this.page < 5) {
+    if (this.page < 6) {
       return this.page += 1;
     } else {
-      return this.page = 5;
+      return this.page = 6;
     }
   }
 
   changePage() {
-    if (this.page === 5) {
-      return this.page = 3;
+    if (this.page === 6) {
+      return this.page = 4;
     }
     if (this.page > 1) {
       return this.page -= 1;
