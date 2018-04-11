@@ -12,22 +12,26 @@ export class AppComponent {
 
   public persons = [
     {
-      'name': 'Joshua Emanaul',
+      'firstname': 'Joshua',
+      'lastname': 'Emanaul',
       'company': 'NewAge Computer Inc.',
       'phone': '212-567-893'
     },
     {
-      'name': 'Mark Goodwill',
+      'firstname': 'Mark',
+      'lastname': 'Goodwill',
       'company': 'FedEx Inc.',
       'phone': '212-567-893'
     },
     {
-      'name': 'Paul Elizabeth',
+      'firstname': 'Paul',
+      'lastname': 'Elizabeth',
       'company': 'ComputerRE Ent.',
       'phone': '212-567-893'
     },
     {
-      'name': 'Mary Oliva',
+      'firstname': 'Mary',
+      'lastname': 'Oliva',
       'company': 'Advanced Diagnostics',
       'phone': '212-567-893'
     }
@@ -37,12 +41,14 @@ export class AppComponent {
     alert(`${this.name} was clicked`);
   }
 
-  displayPerson(persons) {
-    return `${persons.name} works for ${persons.company}`;
+  displayPerson(person) {
+    const fullname = `${person.firstname} ${person.lastname}`;
+    return `${fullname} works for ${person.company}`;
   }
 
-  getphone(persons) {
-    return `${persons.name}: ${persons.phone}`;
+  getphone(person) {
+    const fullname = `${person.firstname} ${person.lastname}`;
+    return `${fullname}: ${person.phone}`;
   }
 
   changePage1() {
