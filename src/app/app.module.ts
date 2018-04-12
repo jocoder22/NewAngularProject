@@ -4,12 +4,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { Header1Component } from './header1/header1.component';
+import { FormComponentComponent } from './form-component/form-component.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Header1Component
+    Header1Component,
+    FormComponentComponent
   ],
   imports: [
     BrowserModule,
