@@ -9,6 +9,10 @@ export class FormComponentComponent implements OnInit {
 
   constructor() { }
 
+  logForm(value) {
+    console.log(value);
+  }
+
   ngOnInit() {
   }
 
