@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { Header1Component } from './header1/header1.component';
 import { FormComponentComponent } from './form-component/form-component.component';
 import { ListcomponentComponent } from './listcomponent/listcomponent.component';
+import { SwitchComponentComponent } from './switch-component/switch-component.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ListcomponentComponent } from './listcomponent/listcomponent.component'
     AppComponent,
     Header1Component,
     FormComponentComponent,
-    ListcomponentComponent
+    ListcomponentComponent,
+    SwitchComponentComponent
   ],
   imports: [
     BrowserModule,
