@@ -10,45 +10,9 @@ export class AppComponent {
   name = 'Joshua';
   page = null;
 
-  public persons = [
-    {
-      'firstname': 'Joshua',
-      'lastname': 'Emanaul',
-      'company': 'NewAge Computer Inc.',
-      'phone': '212-567-893'
-    },
-    {
-      'firstname': 'Mark',
-      'lastname': 'Goodwill',
-      'company': 'FedEx Inc.',
-      'phone': '212-567-893'
-    },
-    {
-      'firstname': 'Paul',
-      'lastname': 'Elizabeth',
-      'company': 'ComputerRE Ent.',
-      'phone': '212-567-893'
-    },
-    {
-      'firstname': 'Mary',
-      'lastname': 'Oliva',
-      'company': 'Advanced Diagnostics',
-      'phone': '212-567-893'
-    }
-  ];
 
   alertName(): void {
     alert(`${this.name} was clicked`);
-  }
-
-  displayPerson(person) {
-    const fullname = `${person.firstname} ${person.lastname}`;
-    return `${fullname} works for ${person.company}`;
-  }
-
-  getphone(person) {
-    const fullname = `${person.firstname} ${person.lastname}`;
-    return `${fullname}: ${person.phone}`;
   }
 
   changePage1() {
