@@ -5,13 +5,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { Header1Component } from './header1/header1.component';
 import { FormComponentComponent } from './form-component/form-component.component';
+import { ListcomponentComponent } from './listcomponent/listcomponent.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     Header1Component,
-    FormComponentComponent
+    FormComponentComponent,
+    ListcomponentComponent
   ],
   imports: [
     BrowserModule,
