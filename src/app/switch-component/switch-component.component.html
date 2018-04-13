@@ -1,3 +1,28 @@
-<p>
-  switch-component works!
-</p>
+<div [ngSwitch]= "page" class="pg">
+  <p *ngSwitchCase="1">Viewing content of first page ... </p>
+  <p *ngSwitchCase="2">Viewing content of second page ...</p>
+  <p *ngSwitchCase="3">Viewing content of third page ...</p>
+  <app-header1 *ngSwitchCase="4"></app-header1>
+  <p *ngSwitchCase="5">Viewing content of fourth page ...</p>
+  <p *ngSwitchCase="6">
+    You've reached the last page .... <br>
+    Viewing content of fourth page ...
+  </p>
+  <p *ngSwitchCase="0">
+      You've reached the begining  ... <br>
+      Viewing content of first page ...
+    </p>
+  <p *ngSwitchDefault>No page selected ...</p>
+  <button (click)="changePage()"> <<< Change Page</button>
+  <button (click)="changePage1()"> Change Page >>></button>
+</div>
+<!-- <textarea [style.color]="hasError? 'red': 'black'" id="" cols="30" rows="10"></textarea>
+<div [hidden]="noErrors">
+  The value you entered is not valid. Please enter valid SSN.
+</div> -->
+<div>
+  <button (click)="page = 1">Page 1</button>
+  <button (click)="page = 2">Page 2</button>
+  <button (click)="page = 3">Page 3</button>
+</div>
+<br>
