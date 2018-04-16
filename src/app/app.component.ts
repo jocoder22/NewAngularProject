@@ -9,8 +9,6 @@ export class AppComponent {
   title = 'My New Angular App!';
   name = 'Joshua';
 
-
-
   alertName(): void {
     alert(`${this.name} was clicked`);
   }
