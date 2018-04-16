@@ -1,0 +1,18 @@
+<form #form="ngForm" (ngSubmit)="logForm(form.value)" ngNativeValidate>
+  <label>Firstname:</label>
+  <input type="text" name="firstname" ngModel required>
+  <br><br>
+  <label>Lastname:</label>
+  <input type="text" name="Lastname" ngModel>
+  <br><br>
+  <label>Street:</label>&nbsp;&nbsp;&emsp;
+  <input type="text" name="Street" ngModel>
+  <br><br>
+  <label>Zip:</label>&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="Zip" ngModel>
+  <br><br>
+  <label>city:</label>&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="city" ngModel required>
+  <br><br>
+  <button type="submit">Submit</button>
+</form>
