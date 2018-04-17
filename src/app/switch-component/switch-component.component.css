@@ -1,10 +1,11 @@
-button{
+button {
     background-color: rgb(205, 238, 148);
     border: 1px solid saddlebrown;
     border-radius: 8px;
     margin-bottom: 6px;
-   
-}
+ }
+
+
 
 .btnleft {
    position: left;
