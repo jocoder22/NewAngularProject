@@ -3,7 +3,7 @@ button {
     border: 1px solid saddlebrown;
     border-radius: 8px;
     margin-bottom: 6px;
-    left: 690px;
+    left: 840px;
     position: relative;
  }
 
@@ -15,6 +15,6 @@ button {
 
 .btn2 > button {
     display:block;
-    left: 800px;
+    left: 940px;
 }
 
