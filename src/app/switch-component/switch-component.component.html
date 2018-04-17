@@ -1,4 +1,4 @@
-<div [ngSwitch]= "page" class="pg">
+<div class="btn3" [ngSwitch]= "page" class="pg">
   <p *ngSwitchCase="1">Viewing content of first page ... </p>
   <p *ngSwitchCase="2">Viewing content of second page ...</p>
   <p *ngSwitchCase="3">Viewing content of third page ...</p>
@@ -13,14 +13,14 @@
       Viewing content of first page ...
     </p>
   <p *ngSwitchDefault>No page selected ...</p>
-  <button (click)="changePage()"> <<< Change Page</button>
-  <button class="btnleft" (click)="changePage1()"> Change Page >>></button>
+  <button (click)="changePage()"> <span><<< Change Page</span></button>
+  <button (click)="changePage1()"><span>Change Page >>></span></button>
 </div>
 <!-- <textarea [style.color]="hasError? 'red': 'black'" id="" cols="30" rows="10"></textarea>
 <div [hidden]="noErrors">
   The value you entered is not valid. Please enter valid SSN.
 </div> -->
-<div>
+<div class="btn2">
   <button (click)="page = 1">Page 1</button>
   <button (click)="page = 2">Page 2</button>
   <button (click)="page = 3">Page 3</button>

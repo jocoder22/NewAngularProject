@@ -3,6 +3,8 @@ button {
     border: 1px solid saddlebrown;
     border-radius: 8px;
     margin-bottom: 6px;
+    left: 690px;
+    position: relative;
  }
 
  button:hover{
@@ -11,6 +13,8 @@ button {
     color: white;
 }
 
-.btnleft {
-   position: left;
+.btn2 > button {
+    display:block;
+    left: 800px;
 }
+
