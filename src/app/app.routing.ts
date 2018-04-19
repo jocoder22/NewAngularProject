@@ -20,7 +20,7 @@ const appRoutes: Routes = [
     path: 'Switch', component: SwitchComponentComponent, canActivate: [AuthGuard]
   },
   {
-    path: 'Login', component: LoginComponentComponent
+    path: 'Log_auth', component: LoginComponentComponent
   }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
