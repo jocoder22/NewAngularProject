@@ -14,6 +14,7 @@ import { SwitchComponentComponent } from './switch-component/switch-component.co
 
 
 import { routing } from './app.routing';
+import { LoginComponentComponent } from './login-component/login-component.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { routing } from './app.routing';
     FormComponentComponent,
     ListcomponentComponent,
     SwitchComponentComponent,
-    RouterComponent
+    RouterComponent,
+    LoginComponentComponent
   ],
   imports: [
     BrowserModule,
