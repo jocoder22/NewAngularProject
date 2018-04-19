@@ -18,7 +18,10 @@ button {
     left: 940px;
 }
 
-.btn3 > p {
-    text-align: center;
-    font-size: 40px;
+
+p {
+  text-align:center;
+  color: blue;
+  font-size: 60px;
 }
+
