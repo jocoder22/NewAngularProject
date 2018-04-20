@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LoginService } from './login-service';
+
 
 @Component({
   selector: 'app-router',
@@ -16,5 +18,8 @@ import { Component } from '@angular/core';
       <router-outlet></router-outlet>
   `,
 })
-export class RouterComponent { }
+export class RouterComponent {
+
+  constructor() {}
+ }
 
