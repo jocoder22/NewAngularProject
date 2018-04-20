@@ -1,4 +1,5 @@
 
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -16,6 +17,8 @@ import { SwitchComponentComponent } from './switch-component/switch-component.co
 import { routing } from './app.routing';
 import { LoginComponentComponent } from './login-component/login-component.component';
 
+import { LoginService } from './login-service';
+import { AuthGuard } from './auth-guard-service';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,7 @@ import { LoginComponentComponent } from './login-component/login-component.compo
     RouterModule,
     routing
   ],
-  providers: [],
+  providers: [AuthGuard, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
