@@ -1,3 +1,4 @@
+<div>
 <form #form="ngForm" (ngSubmit)="logForm(form.value)" ngNativeValidate>
   <label>Firstname:</label>
   <input type="text" name="firstname" ngModel required>
@@ -16,3 +17,22 @@
   <br><br>
   <button type="submit">Submit</button>
 </form>
+</div>
+
+<div>
+  Personal Information
+  <form action="">
+    Name:
+    <input type="text">
+    Address 1:
+    <input type="text">
+    Address 2:
+    <input type="text">
+    Zip code:
+    <input type="text">
+    City:
+    <input type="text">
+    State:
+    <input type="text">
+  </form>
+</div>
