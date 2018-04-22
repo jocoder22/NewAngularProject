@@ -1,43 +1,56 @@
-<div>
+<div class="container">
+<div class="firstdiv">
 <form #form="ngForm" (ngSubmit)="logForm(form.value)" ngNativeValidate>
-  <label>Firstname:</label>
+  <label>Firstname:</label>&nbsp;&nbsp;
   <input type="text" name="firstname" ngModel required>
   <br><br>
-  <label>Lastname:</label>
+  <label>Lastname:</label>&nbsp;&nbsp;
   <input type="text" name="Lastname" ngModel>
   <br><br>
-  <label>Street:</label>&nbsp;&nbsp;&emsp;
+  <label>Address 1:</label>&nbsp;&nbsp;
   <input type="text" name="Street" ngModel>
   <br><br>
-  <label>Zip:</label>&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label>Address 2:</label>&nbsp;&nbsp;
+  <input type="text" name="Street" ngModel>
+  <br><br>
+  <label>Zip:</label>&emsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;
   <input type="text" name="Zip" ngModel>
   <br><br>
-  <label>city:</label>&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label>City:</label>&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="city" ngModel required>
+  <br><br>
+  <label>State:</label>&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <input type="text" name="city" ngModel required>
   <br><br>
   <button type="submit">Submit</button>
 </form>
 </div>
 
-<div><br><br>
-  Personal Information
-  <form action="">
-    LastName:
-    <input type="text">&nbsp;&nbsp;&emsp;
-    FirstName:
+
+<div class="form2 firstdiv" >
+  <h2>Personal Information</h2>
+  <form action="form22">
+    Age:
+    <input type="text">&nbsp;&nbsp;&emsp;&emsp;&emsp;
+    Gender:
     <input type="text"><br><br>
-    Address 1:
+    Race:
     <input type="text">&nbsp;&nbsp;&emsp;
-    Address 2:
+    Occupation:
     <input type="text"> <br><br>
-    Zip code:
-    <input type="text">&nbsp;&nbsp;&emsp;
-    City:
+    Marital Status:
+    <input type="text">&nbsp;&nbsp;&emsp;&emsp;
+    Religion:
     <input type="text"><br><br>
-    State:
-    <input type="text">&nbsp;&nbsp;&emsp;
-    Country:
+    Telephone Home:
+    <input type="text">&nbsp;&nbsp;
+    Eye Color:
+    <input type="text"><br><br>
+    Telephone Work:
+    <input type="text">&nbsp;&nbsp;
+    Next of Kin:
     <input type="text"><br><br>
     &nbsp;&nbsp;&emsp;<button type="submit">Submit</button>
   </form>
+</div>
 </div>
