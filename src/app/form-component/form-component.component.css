@@ -1,2 +1,13 @@
 
+.container {
+    width: 100%;
+    display: inline-flex;
+}
 
+.firstdiv{
+    width: 48%;
+}
+
+.form2{
+    display: inline;
+}
