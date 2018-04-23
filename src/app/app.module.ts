@@ -19,6 +19,7 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 
 import { LoginService } from './login-service';
 import { AuthGuard } from './auth-guard-service';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AuthGuard } from './auth-guard-service';
     ListcomponentComponent,
     SwitchComponentComponent,
     RouterComponent,
-    LoginComponentComponent
+    LoginComponentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
