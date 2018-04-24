@@ -11,30 +11,26 @@ export class FormComponentComponent implements OnInit {
 
   registerForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder) {}
+
+
+  ngOnInit() {
     this.registerForm = this.formBuilder.group ({
-      Age: [' ', Validators.required],
-      Gender:  ' ',
-      Race:  ' ',
-      Occupation:  ' ',
-      MaritalStatus:  ' ',
-      Religion:  ' ',
-      TelephoneHome: [' ', [Validators.required, Validators.pattern('[0-9]{3}-[0-9]{3}-[0-9]{4}')]],
-      EyeColor:  ' ',
-      TelephoneWork:  [' ', [Validators.required, Validators.pattern('[0-9]{3}-[0-9]{3}-[0-9]{4}')]],
-      NextKin: ' '
+      Age: ['', [Validators.required, Validators.pattern('[0-9]{2}')]],
+      Gender: '',
+      Race: '',
+      Occupation: '',
+      MaritalStatus: '',
+      Religion: '',
+      TelephoneHome: ['', [Validators.required, Validators.pattern('[0-9]{3}-[0-9]{3}-[0-9]{4}')]],
+      EyeColor: '',
+      TelephoneWork: ['', [Validators.required, Validators.pattern('[0-9]{10}')]],
+      NextKin: ''
     });
   }
 
-  logForm2() {
-    console.log();
-  }
-
-  logForm(value) {
+  logForm(value: any) {
     console.log(value);
-  }
-
-  ngOnInit() {
   }
 
 }

@@ -35,6 +35,9 @@
   <form [formGroup]="registerForm" (ngSubmit)="logForm()">
     Age:
     <input type="text" name="Age" formControlName="Age">&nbsp;&nbsp;&emsp;&emsp;&emsp;
+    <div class="alert" style="width:28%"
+      *ngIf=' !registerForm.controls.Age.pristine && registerForm.controls.Age.errors'>
+      Age must be between 0 - 99</div>
     Gender:
     <input type="text" name="Gender" formControlName="Gender"><br><br>
     Race:
@@ -47,10 +50,18 @@
     <input type="text" name="Religion" formControlName="Religion"><br><br>
     Telephone Home:
     <input type="text" name="TelephoneHome" formControlName="TelephoneHome">&nbsp;&nbsp;
+    <div class="alert" style="width:48%"
+        *ngIf="!registerForm.controls.TelephoneHome.pristine 
+          && registerForm.controls.TelephoneHome.errors">
+      Telephone Home must be of xxx-xxx-xxxx</div>
     Eye Color:
     <input type="text" name="EyeColor" formControlName="EyeColor"><br><br>
     Telephone Work:
     <input type="text" name="TelephoneWork" formControlName="TelephoneWork">&nbsp;&nbsp;
+    <div class="alert" style="width:48%"
+      *ngIf="!registerForm.controls.TelephoneWork.pristine 
+        && registerForm.controls.TelephoneWork.errors">
+         Telephone Work must be of xxx-xxx-xxxx</div>
     Next of Kin:
     <input type="text" name="NextKin" formControlName="Nextkin"><br><br>
     &nbsp;&nbsp;&emsp;<button type="submit">Submit</button>
