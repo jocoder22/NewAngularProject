@@ -14,7 +14,7 @@
   <input type="text" name="Street" ngModel>
   <br><br>
   <label>Zip:</label>&emsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;
-  <input type="text" name="Zip" ngModel>
+  <input type="text" name="Zip" ngModel required pattern="[0-9]{5}">
   <br><br>
   <label>City:</label>&emsp;&emsp;&nbsp;&nbsp;&nbsp;
   <input type="text" name="city" ngModel required>
