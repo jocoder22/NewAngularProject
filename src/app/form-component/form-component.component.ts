@@ -1,4 +1,4 @@
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -11,10 +11,19 @@ export class FormComponentComponent implements OnInit {
 
   registerForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { 
+  constructor(private formBuilder: FormBuilder) {
     this.registerForm = this.formBuilder.group ({
-      : ' ',
-    })
+      Age: [' ', Validators.required],
+      Gender:  ' ',
+      Race:  ' ',
+      Occupation:  ' ',
+      MaritalStatus:  ' ',
+      Religion:  ' ',
+      TelephoneHome:  ' ',
+      EyeColor:  ' ',
+      TelephoneWork:  ' ',
+      NextKin: ' '
+    });
   }
 
   logForm(value) {
