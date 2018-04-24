@@ -19,11 +19,15 @@ export class FormComponentComponent implements OnInit {
       Occupation:  ' ',
       MaritalStatus:  ' ',
       Religion:  ' ',
-      TelephoneHome:  ' ',
+      TelephoneHome: [' ', [Validators.required, Validators.pattern('[0-9]{3}-[0-9]{3}-[0-9]{4}')]],
       EyeColor:  ' ',
-      TelephoneWork:  ' ',
+      TelephoneWork:  [' ', [Validators.required, Validators.pattern('[0-9]{3}-[0-9]{3}-[0-9]{4}')]],
       NextKin: ' '
     });
+  }
+
+  logForm2() {
+    console.log();
   }
 
   logForm(value) {
