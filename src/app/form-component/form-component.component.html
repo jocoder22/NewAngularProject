@@ -15,7 +15,7 @@
   <br><br>
   <label>Zip:</label>&emsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;
   <input type="text" name="Zip" #zip="ngModel" ngModel required pattern="[0-9]{5}">
-  <div class="alert" [hidden]="zip.valid">
+  <div class="alert" [hidden]="zip.valid || zip.pristine" style ="width:28%">
     Zip code must 5 digits!
   </div>
   <br><br>
@@ -23,7 +23,7 @@
   <input type="text" name="city" ngModel required>
   <br><br>
   <label>State:</label>&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input type="text" name="city" ngModel required>
+  <input type="text" name="state" ngModel required>
   <br><br>
   <button type="submit">Submit</button>
 </form>
