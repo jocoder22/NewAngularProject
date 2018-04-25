@@ -33,10 +33,10 @@
 <div class="form2 firstdiv" >
   <h2>Personal Information</h2>
   <form [formGroup]="registerForm" (ngSubmit)="logForm()">
-    Age:
+    <label>Age:</label>
     <input type="text" name="Age" formControlName="Age">&nbsp;&nbsp;&emsp;&emsp;&emsp;
     <div class="alert" style="width:28%"
-      *ngIf=' !registerForm.controls.Age.pristine && registerForm.controls.Age.errors'>
+      *ngIf=" !registerForm.controls.Age.pristine && registerForm.controls.Age.errors">
       Age must be between 0 - 99</div>
     Gender:
     <input type="text" name="Gender" formControlName="Gender"><br><br>

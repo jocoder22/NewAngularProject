@@ -6,6 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { RouterModule } from '@angular/router';
 import { RouterComponent } from './router.component';
+import { NgIf } from '@angular/common';
+
 
 import { AppComponent } from './app.component';
 import { Header1Component } from './header1/header1.component';
@@ -20,6 +22,7 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 import { LoginService } from './login-service';
 import { AuthGuard } from './auth-guard-service';
 import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
