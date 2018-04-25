@@ -40,8 +40,9 @@
       Age must be between 0 - 99</div>
     Gender:
     <input type="text" name="Gender" formControlName="Gender"><br><br>
-    *ngIf=" !registerForm.controls.Gender.pristine && registerForm.controls.Gender.errors">
-    Gender must be Male or Female </div>
+    <div class="alert" style="width:28%"
+      *ngIf=" !registerForm.controls.Gender.pristine && registerForm.controls.Gender.errors">
+      Gender must be Male or Female </div>
     Race:
     <input type="text" name="Race" formControlName="Race">&nbsp;&nbsp;&emsp;
     Occupation:
