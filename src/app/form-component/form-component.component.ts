@@ -20,7 +20,7 @@ export class FormComponentComponent implements OnInit {
       Gender: ['', [Validators.required, Validators.pattern('(Fem)?M?ale')]],
       Race: '',
       Occupation: '',
-      MaritalStatus: ['', [Validators.required, Validators.pattern('SingleMarriedDivorvedSeparated')]],
+      MaritalStatus: ['', [Validators.required, Validators.pattern('[SingleMarriedDivorvedSeparated]{6,11}')]],
       Religion: '',
       TelephoneHome: ['', [Validators.required, Validators.pattern('[0-9]{3}-[0-9]{3}-[0-9]{4}')]],
       EyeColor: '',
