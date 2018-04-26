@@ -49,10 +49,10 @@
     <input type="text" name="Occupation" formControlName="Occupation"> <br><br>
     Marital Status:
     <input type="text" name="MaritalStatus" formControlName="MaritalStatus">&nbsp;&nbsp;&emsp;&emsp;
-    <div class="alert" style="width:48%"
+    <div class="alert" style="width:68%"
     *ngIf="!registerForm.controls.MaritalStatus.pristine 
       && registerForm.controls.MaritalStatus.errors">
-  Telephone Home must be of xxx-xxx-xxxx</div>
+      Martial Status: Single, Married, Divorced, Separated</div>
     Religion:
     <input type="text" name="Religion" formControlName="Religion"><br><br>
     Telephone Home:
