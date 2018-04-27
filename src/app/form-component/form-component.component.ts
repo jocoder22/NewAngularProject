@@ -17,10 +17,10 @@ export class FormComponentComponent implements OnInit {
   ngOnInit() {
     this.registerForm = this.formBuilder.group ({
       Age: ['', [Validators.required, Validators.pattern('[0-9]{1,2}')]],
-      Gender: ['', [Validators.required, Validators.pattern('(Fem)?M?ale')]],
+      Gender: ['', [Validators.required, Validators.pattern('(Male|Female)')]],
       Race: '',
       Occupation: '',
-      MaritalStatus: ['', [Validators.required, Validators.pattern('[SinglMaDvorcdSptd]{6,11}')]],
+      MaritalStatus: ['', [Validators.required, Validators.pattern('(Single|Married|Divorced|Separated)')]],
       Religion: '',
       TelephoneHome: ['', [Validators.required, Validators.pattern('[0-9]{3}-[0-9]{3}-[0-9]{4}')]],
       EyeColor: '',
