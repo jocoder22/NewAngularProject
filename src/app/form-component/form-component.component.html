@@ -32,12 +32,12 @@
 
 <div class="form2 firstdiv" >
   <h2>Personal Information</h2>
-  <form [formGroup]="registerForm" (ngSubmit)="logForm()">
+  <form [formGroup]="registerForm"  (ngSubmit)="logForm()">
     <label>Age:</label>
     <input type="text" name="Age" formControlName="Age">&nbsp;&nbsp;&emsp;&emsp;&emsp;
     <div class="alert" style="width:28%"
       *ngIf=" !registerForm.controls.Age.pristine && registerForm.controls.Age.errors">
-      Age must be between 0 - 99</div>
+      Age must be between 45 - 55 inclusive</div>
     Gender:
     <input type="text" name="Gender" formControlName="Gender"><br><br>
     <div class="alert" style="width:28%"
@@ -66,8 +66,7 @@
     Telephone Work:
     <input type="text" name="TelephoneWork" formControlName="TelephoneWork">&nbsp;&nbsp;
     <div class="alert" style="width:48%"
-      *ngIf="!registerForm.controls.TelephoneWork.pristine 
-        && registerForm.controls.TelephoneWork.errors">
+      *ngIf="!registerForm.controls.TelephoneWork.pristine && registerForm.controls.TelephoneWork.errors">
          Telephone Work must be of xxx-xxx-xxxx</div>
     Next of Kin:
     <input type="text" name="NextKin" formControlName="Nextkin"><br><br>
@@ -75,3 +74,4 @@
   </form>
 </div>
 </div>
+
