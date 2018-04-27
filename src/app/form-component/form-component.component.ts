@@ -16,7 +16,7 @@ export class FormComponentComponent implements OnInit {
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group ({
-      Age: ['', [Validators.required, Validators.pattern('[0-9]{1,2}')]],
+      Age: ['', [Validators.required, Validators.pattern('(4[5-9]|5[0-5])')]],
       Gender: ['', [Validators.required, Validators.pattern('(Male|Female)')]],
       Race: '',
       Occupation: '',
