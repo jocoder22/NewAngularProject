@@ -1,6 +1,7 @@
-import { AbstractControlDirective, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AbstractControlDirective, FormBuilder, FormGroup, Validators, ValidationErrors } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-
+import { AbstractControl } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 
 
 @Component({
@@ -27,7 +28,7 @@ export class FormComponentComponent {
     });
   }
 
-  HomePhoneValidator (control: AbstractControl): ValidationErrors{
+  HomePhoneValidator (control: AbstractControl): ValidationErrors {
     if (control.value.startsWith('212')) {
       return null;
     } else {
