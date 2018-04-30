@@ -35,7 +35,7 @@
     <form [formGroup]="registerForm"  (ngSubmit)="logForm()">
       <div class="form-group">
         <label>Age:
-          <input  class="form-control"  formControlName="Age">&nbsp;&nbsp;&emsp;&emsp;&emsp;
+          <input  class="form-control"  formControlName="Age">
           <small class="alert" style="width:28%"
             *ngIf="!registerForm.controls.Age.pristine && registerForm.controls.Age.errors">
             Age must be between 45 - 55 inclusive</small>
@@ -43,7 +43,7 @@
       </div>
       <div class="form-group">
         <label> Gender:
-          <input  class="form-control"  formControlName="Gender"><br><br>
+          <input  class="form-control"  formControlName="Gender">
           <small class="alert" style="width:28%"
            *ngIf=" !registerForm.controls.Gender.pristine && registerForm.controls.Gender.errors">
              Gender must be Male or Female </small>
@@ -51,17 +51,17 @@
       </div>
       <div class="form-group">
         <label>Race:
-            <input class="form-control" formControlName="Race">&nbsp;&nbsp;&emsp;
+            <input class="form-control" formControlName="Race">
         </label>
       </div>
       <div class="form-group">
         <label> Occupation:
-            <input class="form-control" formControlName="Occupation"> <br><br>
+            <input class="form-control" formControlName="Occupation"> 
         </label>
       </div>
       <div class="form-group">
         <label> Marital Status:
-            <input class="form-control" formControlName="MaritalStatus">&nbsp;&nbsp;&emsp;&emsp;
+            <input class="form-control" formControlName="MaritalStatus">
             <div class="alert" style="width:68%"
               *ngIf="!registerForm.controls.MaritalStatus.pristine 
               && registerForm.controls.MaritalStatus.errors">
@@ -73,10 +73,10 @@
           <input class="form-control"  formControlName="Religion">
         </label>  
       </div>
-      <br><br>
+
       <div class="form-group">
         <label>Telephone Home:
-          <input class="form-control"  formControlName="TelephoneHome">&nbsp;&nbsp;
+          <input class="form-control"  formControlName="TelephoneHome">
             <div class="alert" style="width:48%"
               *ngIf="!registerForm.controls.TelephoneHome.pristine 
                && registerForm.controls.TelephoneHome.errors">
@@ -88,11 +88,11 @@
           <input class="form-control" formControlName="EyeColor">
         </label>
       </div>
-      <br><br>
+     
   
       <div class="form-group">
         <label>Telephone Work:
-          <input class="form-control" formControlName="TelephoneWork">&nbsp;&nbsp;
+          <input class="form-control" formControlName="TelephoneWork">
             <small class="alert" style="width:48%"
               *ngIf="!registerForm.controls.TelephoneWork.pristine && 
                 registerForm.controls.TelephoneWork.errors">
@@ -102,9 +102,9 @@
         </div>  
       <div class="form-group">
         <label> Next of Kin:
-            <input class="form-control" formControlName="Nextkin"><br><br>
+            <input class="form-control" formControlName="Nextkin">
         </label> 
-      </div>  &nbsp;&nbsp;&emsp;
+      </div> 
       <button type="submit">Submit</button> 
     </form>
   </div>
