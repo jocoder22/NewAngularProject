@@ -1,77 +1,112 @@
 <div class="container">
-<div class="firstdiv">
-<form #form="ngForm" (ngSubmit)="logForm(form.value)" ngNativeValidate>
-  <label>Firstname:</label>&nbsp;&nbsp;
-  <input type="text" name="firstname" ngModel required>
-  <br><br>
-  <label>Lastname:</label>&nbsp;&nbsp;
-  <input type="text" name="Lastname" ngModel>
-  <br><br>
-  <label>Address 1:</label>&nbsp;&nbsp;
-  <input type="text" name="Street" ngModel>
-  <br><br>
-  <label>Address 2:</label>&nbsp;&nbsp;
-  <input type="text" name="Street" ngModel>
-  <br><br>
-  <label>Zip:</label>&emsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;
-  <input type="text" name="Zip" #zip="ngModel" ngModel required pattern="[0-9]{5}">
-  <div class="alert" [hidden]="zip.valid || zip.pristine" style ="width:28%">
-    Zip code must 5 digits!
+  <div class="firstdiv">
+    <form #form="ngForm" (ngSubmit)="logForm(form.value)" ngNativeValidate>
+      <label>Firstname:</label>&nbsp;&nbsp;
+      <input type="text" name="firstname" ngModel required>
+      <br><br>
+      <label>Lastname:</label>&nbsp;&nbsp;
+      <input type="text" name="Lastname" ngModel>
+      <br><br>
+      <label>Address 1:</label>&nbsp;&nbsp;
+      <input type="text" name="Street" ngModel>
+      <br><br>
+      <label>Address 2:</label>&nbsp;&nbsp;
+      <input type="text" name="Street" ngModel>
+      <br><br>
+      <label>Zip:</label>&emsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" name="Zip" #zip="ngModel" ngModel required pattern="[0-9]{5}">
+      <div class="alert" [hidden]="zip.valid || zip.pristine" style ="width:28%">
+        Zip code must 5 digits!
+      </div>
+      <br><br>
+      <label>City:</label>&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" name="city" ngModel required>
+      <br><br>
+      <label>State:</label>&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" name="state" ngModel required>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
   </div>
-  <br><br>
-  <label>City:</label>&emsp;&emsp;&nbsp;&nbsp;&nbsp;
-  <input type="text" name="city" ngModel required>
-  <br><br>
-  <label>State:</label>&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input type="text" name="state" ngModel required>
-  <br><br>
-  <button type="submit">Submit</button>
-</form>
-</div>
 
 
-<div class="form2 firstdiv" >
-  <h2>Personal Information</h2>
-  <form [formGroup]="registerForm"  (ngSubmit)="logForm()">
-    <label>Age:</label>
-    <input type="text" name="Age" formControlName="Age">&nbsp;&nbsp;&emsp;&emsp;&emsp;
-    <div class="alert" style="width:28%"
-      *ngIf=" !registerForm.controls.Age.pristine && registerForm.controls.Age.errors">
-      Age must be between 45 - 55 inclusive</div>
-    Gender:
-    <input type="text" name="Gender" formControlName="Gender"><br><br>
-    <div class="alert" style="width:28%"
-      *ngIf=" !registerForm.controls.Gender.pristine && registerForm.controls.Gender.errors">
-      Gender must be Male or Female </div>
-    Race:
-    <input type="text" name="Race" formControlName="Race">&nbsp;&nbsp;&emsp;
-    Occupation:
-    <input type="text" name="Occupation" formControlName="Occupation"> <br><br>
-    Marital Status:
-    <input type="text" name="MaritalStatus" formControlName="MaritalStatus">&nbsp;&nbsp;&emsp;&emsp;
-    <div class="alert" style="width:68%"
-    *ngIf="!registerForm.controls.MaritalStatus.pristine 
-      && registerForm.controls.MaritalStatus.errors">
-      Martial Status: Single, Married, Divorced, Separated</div>
-    Religion:
-    <input type="text" name="Religion" formControlName="Religion"><br><br>
-    Telephone Home:
-    <input type="text" name="TelephoneHome" formControlName="TelephoneHome">&nbsp;&nbsp;
-    <div class="alert" style="width:48%"
-        *ngIf="!registerForm.controls.TelephoneHome.pristine 
-          && registerForm.controls.TelephoneHome.errors">
-      Telephone Home must be of xxx-xxx-xxxx</div>
-    Eye Color:
-    <input type="text" name="EyeColor" formControlName="EyeColor"><br><br>
-    Telephone Work:
-    <input type="text" name="TelephoneWork" formControlName="TelephoneWork">&nbsp;&nbsp;
-    <div class="alert" style="width:48%"
-      *ngIf="!registerForm.controls.TelephoneWork.pristine && registerForm.controls.TelephoneWork.errors">
-         Telephone Work must be of xxx-xxx-xxxx</div>
-    Next of Kin:
-    <input type="text" name="NextKin" formControlName="Nextkin"><br><br>
-    &nbsp;&nbsp;&emsp;<button type="submit">Submit</button>
-  </form>
-</div>
+  <div class="form2 firstdiv" >
+    <h2>Personal Information</h2>
+    <form [formGroup]="registerForm"  (ngSubmit)="logForm()">
+      <div class="form-group">
+        <label>Age:
+          <input  class="form-control"  formControlName="Age">&nbsp;&nbsp;&emsp;&emsp;&emsp;
+          <small class="alert" style="width:28%"
+            *ngIf="!registerForm.controls.Age.pristine && registerForm.controls.Age.errors">
+            Age must be between 45 - 55 inclusive</small>
+        </label>
+      </div>
+      <div class="form-group">
+        <label> Gender:
+          <input  class="form-control"  formControlName="Gender"><br><br>
+          <small class="alert" style="width:28%"
+           *ngIf=" !registerForm.controls.Gender.pristine && registerForm.controls.Gender.errors">
+             Gender must be Male or Female </small>
+        </label>
+      </div>
+      <div class="form-group">
+        <label>Race:
+            <input class="form-control" formControlName="Race">&nbsp;&nbsp;&emsp;
+        </label>
+      </div>
+      <div class="form-group">
+        <label> Occupation:
+            <input class="form-control" formControlName="Occupation"> <br><br>
+        </label>
+      </div>
+      <div class="form-group">
+        <label> Marital Status:
+            <input class="form-control" formControlName="MaritalStatus">&nbsp;&nbsp;&emsp;&emsp;
+            <div class="alert" style="width:68%"
+              *ngIf="!registerForm.controls.MaritalStatus.pristine 
+              && registerForm.controls.MaritalStatus.errors">
+              Martial Status: Single, Married, Divorced, Separated</div>
+        </label> 
+      </div>
+      <div class="form-group">
+        <label>Religion:
+          <input class="form-control"  formControlName="Religion">
+        </label>  
+      </div>
+      <br><br>
+      <div class="form-group">
+        <label>Telephone Home:
+          <input class="form-control"  formControlName="TelephoneHome">&nbsp;&nbsp;
+            <div class="alert" style="width:48%"
+              *ngIf="!registerForm.controls.TelephoneHome.pristine 
+               && registerForm.controls.TelephoneHome.errors">
+              Telephone Home must be of xxx-xxx-xxxx</div>
+        </label>
+      </div>
+      <div class="form-group">
+        <label>Eye Color:
+          <input class="form-control" formControlName="EyeColor">
+        </label>
+      </div>
+      <br><br>
+  
+      <div class="form-group">
+        <label>Telephone Work:
+          <input class="form-control" formControlName="TelephoneWork">&nbsp;&nbsp;
+            <small class="alert" style="width:48%"
+              *ngIf="!registerForm.controls.TelephoneWork.pristine && 
+                registerForm.controls.TelephoneWork.errors">
+              <i>Telephone Work must be of xxx-xxx-xxxx</i>
+            </small>
+          </label>
+        </div>  
+      <div class="form-group">
+        <label> Next of Kin:
+            <input class="form-control" formControlName="Nextkin"><br><br>
+        </label> 
+      </div>  &nbsp;&nbsp;&emsp;
+      <button type="submit">Submit</button> 
+    </form>
+  </div>
 </div>
 
