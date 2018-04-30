@@ -22,7 +22,7 @@ export class FormComponentComponent {
       Religion: '',
       TelephoneHome: ['', [this.HomePhoneValidator, Validators.required, Validators.pattern('[0-9]{3}-[0-9]{3}-[0-9]{4}')]],
       EyeColor: '',
-      TelephoneWork: ['', [ Validators.required, Validators.pattern('([0-9]{3}-){2}[0-9]{4}')]],
+      TelephoneWork: ['', [ Validators.required, Validators.pattern('917-[0-9]{3}-[0-9]{4}')]],
       NextKin: ''
     });
   }
