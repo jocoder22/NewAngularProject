@@ -8,12 +8,17 @@
 .firstdiv{
     width: 48%;
     padding: 40px;
-    background-color: rgb(52, 34, 209);;
+    background-color: rgb(43, 22, 233);
 }
 
-.form2{
+.form2 {
     display: inline;
+    flex-wrap: wrap;
     background-color: rgb(75, 65, 168);
+}
+.form2 > div {
+  display: flex;
+  flex-flow: wrap;
 }
 
 input{
