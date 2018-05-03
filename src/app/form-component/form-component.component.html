@@ -62,10 +62,10 @@
       <div class="form-group">
         <label> Marital Status:
             <input class="form-control" formControlName="MaritalStatus">
-            <div class="alert" style="width:68%"
+            <small class="alert" style="width:68%"
               *ngIf="!registerForm.controls.MaritalStatus.pristine 
               && registerForm.controls.MaritalStatus.errors">
-              Martial Status: Single, Married, Divorced, Separated</div>
+              Martial Status: Single, Married, Divorced, Separated</small>
         </label> 
       </div>
       <div class="form-group">
@@ -81,10 +81,10 @@
       <div class="form-group">
         <label>Telephone Home:
           <input class="form-control"  formControlName="TelephoneHome">
-            <div class="alert" style="width:48%"
+            <small class="alert" style="width:48%"
               *ngIf="!registerForm.controls.TelephoneHome.pristine 
                && registerForm.controls.TelephoneHome.errors">
-              Telephone Home must be of 917-xxx-xxxx</div>
+              Telephone Home must be of 917-xxx-xxxx</small>
         </label>
       </div>
 
@@ -103,7 +103,7 @@
         <label> Next of Kin:
             <input class="form-control" formControlName="Nextkin">
         </label> 
-      </div> 
+      </div> <br>
       <button type="submit">Submit</button> 
     </form>
   </div>
