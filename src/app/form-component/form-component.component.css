@@ -17,9 +17,14 @@
     background-color: rgb(75, 65, 168);
     }
 
-/* label {
+label {
     font-size: 30px;
-} */
+}
+
+small {
+  font-size: 12px;
+  font-style: italic;
+}
 
 .form2 > div {
   display: flex;
