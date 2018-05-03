@@ -15,8 +15,12 @@
     display: inline;
     flex-wrap: wrap;
     background-color: rgb(75, 65, 168);
+    }
+
+/* label {
     font-size: 30px;
-}
+} */
+
 .form2 > div {
   display: flex;
   flex-flow: wrap;
