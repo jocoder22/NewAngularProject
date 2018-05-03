@@ -15,7 +15,7 @@
     display: inline;
     flex-wrap: wrap;
     background-color: rgb(75, 65, 168);
-    font-size: 10px;
+    font-size: 30px;
 }
 .form2 > div {
   display: flex;
