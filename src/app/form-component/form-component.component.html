@@ -1,5 +1,6 @@
 <div class="container">
-  <div class="firstdiv"><br><br><br>
+  <div class="firstdiv">
+    <div class="form3"><br><br>
     <form #form="ngForm" (ngSubmit)="logForm(form.value)" ngNativeValidate>
       <label>Firstname:</label>&nbsp;&nbsp;
       <input type="text" name="firstname" ngModel required>
@@ -24,9 +25,11 @@
       <br><br>
       <label>State:</label>&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <input type="text" name="state" ngModel required>
-      <br><br>
+      <br><br><br>
       <button type="submit">Submit</button>
     </form>
+    <br><br>
+    </div>
   </div>
 
 
