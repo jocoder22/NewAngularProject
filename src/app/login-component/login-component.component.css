@@ -6,6 +6,8 @@ div {
 input {
     display: inline;
     align-content: center;
+    border: 1px soli black;
+    border-radius: 5px;
 }
 button {
     display: inline;
