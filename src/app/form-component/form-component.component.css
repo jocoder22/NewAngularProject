@@ -8,17 +8,17 @@
 .firstdiv{
     width: 48%;
     padding: 40px;
-    background-color: rgb(43, 22, 233);
+    background-color: rgb(98, 86, 209);
 }
 
 .form2 {
     display: inline;
     flex-wrap: wrap;
-    background-color: rgb(75, 65, 168);
+    background-color: rgb(50, 46, 85);
     
     }
 .form3 {
-  border: 1px solid green;
+  border: 2px solid green;
   padding: 25px;
   margin: 25px;
   border-radius: 8px;
