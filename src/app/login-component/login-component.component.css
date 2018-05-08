@@ -1,10 +1,10 @@
 
-html {
-    
+body {
+    background-color: rgba(219, 135, 26, 0.561);
 }
 
 div {
-    background-color: rgb(177, 204, 21);
+    background-color: rgba(219, 135, 26, 0.835);
     align-content: center;
 }
 
