@@ -1,12 +1,17 @@
+
+html {
+    
+}
+
 div {
-    background-color: grey;
+    background-color: rgb(177, 204, 21);
     align-content: center;
 }
 
 input {
     display: inline;
     align-content: center;
-    border: 1px soli black;
+    border: 1px soli rgba(13, 151, 78, 0.623);
     border-radius: 5px;
 }
 button {
